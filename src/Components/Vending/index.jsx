@@ -15,8 +15,9 @@ const VendingMachine = () => {
               <button
                 onClick={() => setIsWalletOpen(!isWalletOpen)}
                 className="text-center"
+                test-id="btnOpenWallet"
               >
-                {isWalletOpen ? "Add Money" : "Buy items"}
+                {isWalletOpen ? "Add Money" : "Buy Items"}
               </button>
             </div>
           </div>

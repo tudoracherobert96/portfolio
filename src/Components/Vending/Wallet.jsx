@@ -26,10 +26,6 @@ const Wallet = () => {
       const cartCopy = [...cart];
       productsCopy[itemCode].Quantity--;
       cartCopy[itemCode].Quantity++;
-      //   cartCopy.find((elem) => elem.Id === itemCode)
-      //     ? cartCopy[itemCode].Quantity++
-      //     : cartCopy.push({ ...productsCopy[itemCode], Quantity: 1 });
-      console.log("??", cartCopy);
       setProducts(productsCopy);
       setCart(cartCopy);
       setMoney((prevMoney) => prevMoney - productsCopy[itemCode].Price);
@@ -39,7 +35,7 @@ const Wallet = () => {
   return (
     <div>
       <div className="text-center">
-        <h5>Money: {money}</h5>
+        <h5 test-id="walletHeader">Money : {money}</h5>
       </div>
       <div className="text-center">
         <input

@@ -7,7 +7,7 @@ const Vending = (props) => {
   const { products, cart } = useContext(VendingContext);
   const [arrProducts, setArrProducts] = useState([]);
 
-  const changeShowOptions = async () => {
+  const changeShowOptions = () => {
     let productsCopy = (wallet ? [...products] : [...cart]).filter(
       (elem) => elem.Quantity > 0
     );
@@ -16,8 +16,7 @@ const Vending = (props) => {
     while (productsCopy.length > 0) {
       newArr.push(productsCopy.splice(0, 3));
     }
-    console.log(newArr);
-    await setArrProducts((prev) => newArr);
+    setArrProducts((prev) => newArr);
   };
   useEffect(() => {
     changeShowOptions();

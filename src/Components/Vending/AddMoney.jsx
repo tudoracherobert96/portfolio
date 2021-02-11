@@ -17,7 +17,7 @@ const AddMoney = () => {
   };
   return (
     <div className="text-center">
-      <h5>Money : {money}</h5>
+      <h5 test-id="addMoneyHeader">Money : {money}</h5>
       <input
         id="inputMoney"
         type="number"
