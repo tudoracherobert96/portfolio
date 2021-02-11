@@ -65,6 +65,15 @@ const NavBar = () => {
             >
               Contact
             </Link>
+            <Link
+              to="/vending"
+              style={{ padding: "10px 40px" }}
+              id="vending"
+              onClick={(e) => selectNav(e)}
+              className="nav-link"
+            >
+              Vending
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

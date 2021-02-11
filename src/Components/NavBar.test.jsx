@@ -28,6 +28,6 @@ describe("NavBar Testing", () => {
     expect(wrapper.find("#contact").length).toBe(1);
   });
   test("render 4 options", () => {
-    expect(wrapper.find(".nav-link").length).toBe(4);
+    expect(wrapper.find(".nav-link").length).toBe(5);
   });
 });
